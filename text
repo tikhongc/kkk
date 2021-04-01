@@ -1,0 +1,17 @@
+mongoose:
+
+schema:
+裡面有bulit-in validators
+SQL定義一個schema通過表（table）的定義，而MongoDB中是沒有這個的，如果我們使用MongoDB直接插入的就是一個document。 
+mongoose它定義了一個schema來表示document 的數據結構或者構造函數，它是建立在應用層面上的，每個docuemnt都是它的示例對象。
+
+model:
+mongoose中的schema是document的構造函數，使用它可以定義一個document的默認值，進行字段（fields）的驗證。
+mongoose中的model提供了一個訪問數據的接口，通過它可以實現對document(也可以叫做記錄)的CRUD（增，查，改，刪）。
+所以，可以這麼說model是Schema的包裝器，通過包裝實現了Schema結構的數據與MongoDB數據庫之間的交互。
+//https://zhuanlan.zhihu.com/p/52878981
+
+//Unrelevant text:
+//mongoose它定義了一個schema來表示document的數據結構或者構造函數,Schema允許您定義存儲在每個文檔中的字段，及其驗證要求和默認值。
+//Models是從Schema編譯來的構造函數。它們的實例就代表著可以從數據庫保存和讀取的documents。從數據庫創建和讀取document的所有操作都是通過model進行的。
+
